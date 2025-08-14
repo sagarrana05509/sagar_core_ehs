@@ -1,0 +1,178 @@
+{
+  "project_info": {
+    "project_number": "869254644530",
+    "project_id": "fir-7637a",
+    "storage_bucket": "fir-7637a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869254644530:android:4ae317e597760a2f870d2b",
+        "android_client_info": {
+          "package_name": "com.abs.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869254644530-k7lbqcpbnujak4p9n45d0e94dglisvht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtTqKSKkJmrl8tAuiubkJexXi7mz9jwuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869254644530-k7lbqcpbnujak4p9n45d0e94dglisvht.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "869254644530-1gg0dq80cp08q8os69gp8kqld35ma5h4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unitr.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869254644530:android:8870c648d7387fe5870d2b",
+        "android_client_info": {
+          "package_name": "com.app.core_ehs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869254644530-k7lbqcpbnujak4p9n45d0e94dglisvht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtTqKSKkJmrl8tAuiubkJexXi7mz9jwuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869254644530-k7lbqcpbnujak4p9n45d0e94dglisvht.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "869254644530-1gg0dq80cp08q8os69gp8kqld35ma5h4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unitr.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869254644530:android:8fea80e579422795870d2b",
+        "android_client_info": {
+          "package_name": "com.app.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869254644530-aa7jvmp9mp0911hff5ibuk4rqsei1201.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.news",
+            "certificate_hash": "25ce22bd9657eaa0760e5b995835cf0a7588200a"
+          }
+        },
+        {
+          "client_id": "869254644530-k7lbqcpbnujak4p9n45d0e94dglisvht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtTqKSKkJmrl8tAuiubkJexXi7mz9jwuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869254644530-k7lbqcpbnujak4p9n45d0e94dglisvht.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "869254644530-1gg0dq80cp08q8os69gp8kqld35ma5h4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unitr.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869254644530:android:b27d2d1fb6aabdc8870d2b",
+        "android_client_info": {
+          "package_name": "com.unitr.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869254644530-osl4sqa5ihkdjtclifctq07lbhkclgc7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unitr.app",
+            "certificate_hash": "8bfd367dc8303175929a4ccc7fa601b495194092"
+          }
+        },
+        {
+          "client_id": "869254644530-r2ci9775u29ethp7o9n1s9dorhs2kemi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unitr.app",
+            "certificate_hash": "80e1a2d0083489009372d3754e5f83ea3c6e5cb0"
+          }
+        },
+        {
+          "client_id": "869254644530-k7lbqcpbnujak4p9n45d0e94dglisvht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtTqKSKkJmrl8tAuiubkJexXi7mz9jwuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869254644530-k7lbqcpbnujak4p9n45d0e94dglisvht.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "869254644530-1gg0dq80cp08q8os69gp8kqld35ma5h4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unitr.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

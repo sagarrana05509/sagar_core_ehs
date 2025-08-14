@@ -1,0 +1,41 @@
+class StringConstant {
+  static const String male = 'Male';
+  static const String female = 'Female';
+  static const String search = 'Search....';
+  static const String cancel = 'Cancel';
+  static const String ok = 'OK';
+  static const String name = 'Name';
+  static const String pleaseEnterName = 'Please enter name';
+  static const String age = 'Age';
+  static const String pleaseEnterage = 'Please enter Age';
+  static const String phoneNumber = 'Phone Number';
+  static const String pleaseEnterAge = "Please enter age";
+  static const String pleaseEnterPhoneNumber = "Please enter phone number";
+  static const String pleaseEnterValidPhoneNumber =
+      "Please enter valid phone number";
+  static const String gender = "Gender";
+  static const String whatYouPlay = "What you play?";
+  static const String booksYouRead = "Books you've read";
+  static const String citiesVisited = "Cities visited";
+  static const String submit = "Submit";
+  static const String selectAgeRange = "Select Age Range";
+  static const String from = "From";
+  static const String to = "to";
+  static const String apply = "Apply";
+  static const String nameLabel = "Name:";
+  static const String genderLabel = "Gender:";
+  static const String ageLabel = "Age:";
+  static const String syncLabel = "Sync:";
+  static const String synced = "Synced";
+  static const String notSynced = "Not Synced";
+  static const String loading = "Loading....";
+  static const String success = "Success";
+  static const String dataSyncSuccess = "Data sync successfully";
+  static const String noData = "No Data";
+  static const String noDataToSync = "There are no data to sync";
+  static const String selectGames = "Please select games";
+  static const String selectCities = "Please select cities";
+  static const String selectBooks = "Please select books";
+  static const String dataInsertSuccess = "Data Insert Successfully";
+  static const String error = "Error";
+}
