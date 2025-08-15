@@ -125,4 +125,48 @@ class UserLocalStorageRepository {
 
     return results.map((map) => UserProfile.fromSqfLiteMap(map)).toList();
   }
+
+  Future<void> replaceUserProfiles(List<UserProfile> profiles) async {
+    final db = await database;
+    await db.transaction((txn) async {
+      final count = Sqflite.firstIntValue(
+        await txn.rawQuery('SELECT COUNT(*) FROM users'),
+      );
+
+      if (count != null && count > 0) {
+        await txn.delete('users');
+      }
+
+      for (var profile in profiles) {
+        await txn.insert(
+          'users',
+          profile.sqfLitetoMap(),
+          conflictAlgorithm: ConflictAlgorithm.replace,
+        );
+      }
+    });
+  }
+
+  Future<List<UserProfile>> getUsersGroupedBySync(
+    int minAge,
+    int maxAge,
+    bool notSynced,
+    bool synced,
+  ) async {
+    final db = await database;
+    final List<Map<String, dynamic>> maps = await db.rawQuery(
+      notSynced && synced
+          ? 'SELECT * FROM users WHERE age BETWEEN ? AND ? AND (isSync = 0 OR isSync = 1)'
+          : 'SELECT * FROM users WHERE age BETWEEN ? AND ? AND (isSync = ${notSynced ? 0 : 1})',
+      [minAge, maxAge],
+    );
+
+    List<UserProfile> profile = [];
+
+    for (var map in maps) {
+      profile.add(UserProfile.fromSqfLiteMap(map));
+    }
+
+    return profile;
+  }
 }

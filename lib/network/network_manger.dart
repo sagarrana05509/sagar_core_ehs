@@ -59,9 +59,9 @@ class NetworkManager extends GetxController {
       DependencyInjection.isConnected.value = false;
     } else {
       DependencyInjection.isConnected.value = true;
+      DependencyInjection().fetchData();
       if (DependencyInjection.isAppOpened.value) {
         Get.snackbar("Success", "Internet Connected");
-        DependencyInjection().fetchData();
       }
     }
   }

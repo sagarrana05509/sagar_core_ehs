@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sagar_core_ehs_demo/shared/widgets/base_text.dart';
 import '../home_controller.dart';
 import 'package:sagar_core_ehs_demo/shared/constants/string_constant.dart';
 
@@ -28,6 +29,40 @@ void showRangeFilterDialog(HomeController controller) {
             ),
             Text(
               "${StringConstant.from} ${controller.minValue.value.round()} ${StringConstant.to} ${controller.maxValue.value.round()}",
+            ),
+            SizedBox(height: 10),
+            InkWell(
+              onTap: () =>
+                  controller.notSyncData.value = !controller.notSyncData.value,
+              child: Row(
+                children: [
+                  Obx(
+                    () => Icon(
+                      controller.notSyncData.value
+                          ? Icons.check_box
+                          : Icons.check_box_outline_blank,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  BaseText(text: "Not Async Data"),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+            InkWell(
+              onTap: () =>
+                  controller.syncData.value = !controller.syncData.value,
+              child: Row(
+                children: [
+                  Icon(
+                    controller.syncData.value
+                        ? Icons.check_box
+                        : Icons.check_box_outline_blank,
+                  ),
+                  SizedBox(width: 10),
+                  BaseText(text: "Sync Data"),
+                ],
+              ),
             ),
           ],
         );

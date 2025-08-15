@@ -17,6 +17,8 @@ class HomeController extends GetxController {
   var maxValue = 60.0.obs;
 
   RxBool isAscending = true.obs;
+  RxBool syncData = false.obs;
+  RxBool notSyncData = false.obs;
 
   @override
   void onInit() async {
@@ -29,6 +31,7 @@ class HomeController extends GetxController {
   getData() async {
     if (DependencyInjection.isConnected.value) {
       userList.value = await userRepository.getAllUsers();
+      userLocalStorageRepository.replaceUserProfiles(userList);
     } else {
       userList.value = await userLocalStorageRepository.getAllUsers();
     }
@@ -56,6 +59,11 @@ class HomeController extends GetxController {
           snackPosition: SnackPosition.BOTTOM,
         );
       }
+    } else {
+      Get.snackbar(
+        StringConstant.error,
+        StringConstant.internetConnectivityNotAvailable,
+      );
     }
   }
 
@@ -80,9 +88,11 @@ class HomeController extends GetxController {
   }
 
   getRangeData() async {
-    userList.value = await userLocalStorageRepository.getUsersByAgeRange(
-      minAge: minValue.value.toInt(),
-      maxAge: maxValue.value.toInt(),
+    userList.value = await userLocalStorageRepository.getUsersGroupedBySync(
+      minValue.value.toInt(),
+      maxValue.value.toInt(),
+      notSyncData.value,
+      syncData.value,
     );
   }
 

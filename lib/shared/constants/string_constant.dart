@@ -38,4 +38,6 @@ class StringConstant {
   static const String selectBooks = "Please select books";
   static const String dataInsertSuccess = "Data Insert Successfully";
   static const String error = "Error";
+  static const String internetConnectivityNotAvailable =
+      "Internet Connectivity Not Available";
 }
